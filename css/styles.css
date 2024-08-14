@@ -5,7 +5,11 @@
 }
 
 body {
-  font-family: 'DM Sans', 'Arial', sans-serif;
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
 }
 
 body,
@@ -29,4 +33,27 @@ button {
   border: none;
   background: none;
   cursor: pointer;
+}
+
+header {
+  background-image: url(../assets/images/header/mobile-header.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: bottom;
+  background-position-x: center;
+  height: 620px;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    background-image: url(../assets/images/header/tablet-header.png);
+    background-position-x: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  header {
+    background-image: url(../assets/images/header/desktop-header.jpg);
+  }
 }

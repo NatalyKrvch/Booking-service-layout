@@ -1,0 +1,8 @@
+:root {
+  /* colors */
+  --background-color: #121826;
+
+  /* typography */
+  --font-size-base: 14px;
+  --font-family: 'DM Sans', 'Arial', sans-serif;
+}
