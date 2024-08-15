@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400..600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
 :root {
   /* colors */
   --background-color: #121826;
@@ -7,4 +10,12 @@
   --font-size-base: 14px;
   --main-font-family: 'DM Sans', 'Arial', sans-serif;
   --outfit-font-family: 'Outfit', sans-serif;
+  --regular-font-weight: 400;
+  --semi-bold-font-weight: 600;
+
+  /* sizes */
+  --main-header-height: 620px;
+  --title-mobile-width: 420px;
+  --title-tablet-width: 620px;
+  --title-desctop-width: 600px;
 }
