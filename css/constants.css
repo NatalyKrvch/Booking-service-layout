@@ -4,7 +4,11 @@
 :root {
   /* colors */
   --background-color: #121826;
-  --font-color: #121826;
+  --header-font-color: #1e1e1e;
+  --main-font-color: #f2f9fe;
+  --card-font-color: #97a3b6;
+  --card-border-color: #4a5567;
+  --card-bage-color: #20293a;
 
   /* typography */
   --font-size-base: 14px;
@@ -15,7 +19,12 @@
 
   /* sizes */
   --main-header-height: 620px;
+  --card-height: 461px;
+  --card-image-height: 200px;
+
   --title-mobile-width: 420px;
   --title-tablet-width: 620px;
   --title-desctop-width: 600px;
+  --cards-container-width: 1136px;
+  --card-width: 358px;
 }

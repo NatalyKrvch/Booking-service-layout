@@ -1,0 +1,48 @@
+@media screen and (min-width: 768px) {
+  .main-header {
+    background-image: url(../assets/images/header/tablet-header.png);
+    background-position-x: center;
+  }
+
+  .header-titles {
+    gap: 170px;
+    margin-left: 112px;
+    max-width: 620px;
+  }
+
+  .header-titles h1 {
+    font-size: 64px;
+    font-weight: var(--semi-bold-font-weight);
+  }
+
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 72px;
+    column-gap: 32px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main-header {
+    background-image: url(../assets/images/header/desktop-header.jpg);
+  }
+
+  .header-titles {
+    gap: 20px;
+    margin-left: 140px;
+    max-width: var(--title-desctop-width);
+  }
+
+  .header-titles h1 {
+    font-size: 64px;
+    font-weight: var(--semi-bold-font-weight);
+  }
+
+  .cards-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    max-width: var(--cards-container-width);
+    row-gap: 72px;
+    column-gap: 32px;
+  }
+}
