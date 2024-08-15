@@ -15,12 +15,9 @@ export default [
       'prettier/prettier': 'error',
       'eol-last': ['error', 'always'],
       quotes: ['error', 'single', { avoidEscape: true }],
-      'no-unused-vars': [
-        'error',
-        { vars: 'all', args: 'after-used', ignoreRestSiblings: false },
-      ],
       eqeqeq: ['error', 'always'],
       'prefer-const': 'error',
+      'linebreak-style': ['error', 'unix'],
     },
   },
 ];
