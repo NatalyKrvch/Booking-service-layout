@@ -11,7 +11,7 @@ export const renderCard = (data) => {
       class="card-image"
       loading="lazy"
     />
-    ${superhost ? '<div class="superhost-badge">Superhost ⭐</div>' : ''}
+    ${superhost && '<div class="superhost-badge">Superhost ⭐</div>'}
     <div class="card-content">
       <h3 class="card-title">${title}</h3>
       <p class="card-description">
