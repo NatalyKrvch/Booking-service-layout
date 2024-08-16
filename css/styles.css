@@ -77,20 +77,43 @@ button {
   animation: fadeInUp 1s ease-out forwards;
 }
 
-/* cards */
-
 .main {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+
+/* filters */
+
+.filters-bar {
+  position: relative;
+  z-index: 10;
+
+  background: #4a5567;
+  /* background-blend-mode: luminosity;
+  backdrop-filter: blur(50px);
+  transform-style: preserve-3d; */
+
+  padding: 10px;
+  min-height: 112px;
+  border: 1px solid var(--card-border-color);
+  border-radius: 16px;
+  max-width: var(--cards-container-width);
+  min-width: 300px;
+  width: 100%;
+  top: -56px;
+  padding: 10px;
+}
+
+/* cards */
 
 .cards-container {
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
   gap: 72px;
-  margin-top: 225px;
+  margin-top: 50px;
   margin-bottom: 50px;
 }
 
