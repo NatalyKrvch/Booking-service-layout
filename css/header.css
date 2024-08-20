@@ -1,0 +1,38 @@
+.main-header {
+  background-image: url(../assets/images/header/mobile-header.png);
+  font-family: var(--outfit-font-family);
+  color: var(--header-font-color);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: bottom;
+  background-position-x: center;
+  height: var(--main-header-height);
+}
+
+.header-titles {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 110px;
+  margin-top: 170px;
+  margin-left: 36px;
+  max-width: var(--title-mobile-width);
+}
+
+.header-titles h1 {
+  font-size: 48px;
+  font-weight: var(--semi-bold-font-weight);
+}
+
+.header-titles h2 {
+  font-size: 24px;
+  font-weight: var(--regular-font-weight);
+}
+
+.header-titles h1,
+.header-titles h2 {
+  cursor: default;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease-out forwards;
+}
