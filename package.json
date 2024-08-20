@@ -1,0 +1,28 @@
+{
+  "devDependencies": {
+    "@eslint/js": "^9.9.0",
+    "@linthtml/linthtml": "^0.10.1",
+    "eslint": "^9.9.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "gh-pages": "^6.1.1",
+    "globals": "^15.9.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^15.2.9",
+    "prettier": "^3.3.3"
+  },
+  "scripts": {
+    "format": "prettier --write \"**/*.{js,css,html}\"",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.css": [
+      "prettier --write"
+    ]
+  },
+  "type": "module"
+}
