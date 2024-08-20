@@ -15,6 +15,11 @@
     font-weight: var(--semi-bold-font-weight);
   }
 
+  .filters-bar {
+    margin: 0 var(--filter-bar-tablet-padding);
+    width: calc(100% - 2 * var(--filter-bar-tablet-padding));
+  }
+
   .cards-container {
     grid-template-columns: repeat(2, 1fr);
     row-gap: 72px;
@@ -36,6 +41,10 @@
   .header-titles h1 {
     font-size: 64px;
     font-weight: var(--semi-bold-font-weight);
+  }
+
+  .filters-bar {
+    width: var(--cards-container-width);
   }
 
   .cards-container {
