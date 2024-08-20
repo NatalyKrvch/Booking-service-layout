@@ -9,6 +9,7 @@
   --card-font-color: #97a3b6;
   --card-border-color: #4a5567;
   --card-bage-color: #20293a;
+  --filter-bar-background-color: #232d3df2;
 
   /* typography */
   --font-size-base: 14px;
@@ -21,10 +22,19 @@
   --main-header-height: 620px;
   --card-height: 461px;
   --card-image-height: 200px;
+  --filter-bar-min-height: 112px;
 
+  --filter-bar-min-width: 300px;
   --title-mobile-width: 420px;
   --title-tablet-width: 620px;
   --title-desctop-width: 600px;
   --cards-container-width: 1136px;
   --card-width: 358px;
+
+  --main-border-radius: 16px;
+
+  /* margins & paddings */
+  --filter-bar-mobile-padding: 24px;
+  --filter-bar-tablet-padding: 32px;
+  --filter-bar-desctop-padding: 72px;
 }

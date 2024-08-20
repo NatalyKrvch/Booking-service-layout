@@ -88,22 +88,16 @@ button {
 
 .filters-bar {
   position: relative;
-  z-index: 10;
-
-  background: #4a5567;
-  /* background-blend-mode: luminosity;
-  backdrop-filter: blur(50px);
-  transform-style: preserve-3d; */
-
+  min-height: var(--filter-bar-min-height);
   padding: 10px;
-  min-height: 112px;
-  border: 1px solid var(--card-border-color);
-  border-radius: 16px;
-  max-width: var(--cards-container-width);
-  min-width: 300px;
-  width: 100%;
   top: -56px;
-  padding: 10px;
+  margin: 0 var(--filter-bar-mobile-padding);
+  width: calc(100% - 2 * var(--filter-bar-mobile-padding));
+
+  background-color: var(--filter-bar-background-color);
+  backdrop-filter: blur(5px);
+  border: 1px solid var(--card-border-color);
+  border-radius: var(--main-border-radius);
 }
 
 /* cards */
@@ -113,18 +107,19 @@ button {
   grid-template-columns: 1fr;
   justify-items: center;
   gap: 72px;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin: 50px 0;
 }
 
 .card {
+  position: relative;
   height: var(--card-height);
   width: var(--card-width);
   color: var(--main-font-color);
+
   border: 1px solid var(--card-border-color);
-  border-radius: 16px;
-  position: relative;
+  border-radius: var(--main-border-radius);
   opacity: 0;
+
   transform: translateY(20px);
   animation: fadeInUp 1s ease-out forwards;
   transition: box-shadow 0.3s ease;
@@ -146,18 +141,20 @@ button {
   position: absolute;
   top: 10px;
   left: 10px;
+
+  background-color: var(--card-bage-color);
   border-radius: 32px;
   padding: 5px 10px;
-  background-color: var(--card-bage-color);
+
   font-size: 10px;
   font-weight: var(--semi-bold-font-weight);
 }
 
 .card-content {
-  margin: 20px;
   display: flex;
   flex-direction: column;
   gap: 16px;
+  margin: 20px;
 }
 
 .card-description,
@@ -173,8 +170,8 @@ button {
 }
 
 .card-capacities::after {
-  content: '';
   display: block;
+  content: '';
   border-top: 2px solid var(--card-border-color);
   width: 100%;
 }
