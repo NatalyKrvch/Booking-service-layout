@@ -13,10 +13,7 @@
   },
   "scripts": {
     "format": "prettier --write \"**/*.{js,css,html}\"",
-    "prepare": "husky install",
-    "build": "webpack",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "prepare": "husky install"
   },
   "lint-staged": {
     "*.js": [
