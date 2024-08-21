@@ -8,14 +8,14 @@
       content="Find and book cabin in Norway, Finland, Sweden, Switzerland"
     />
     <link rel="icon" href="assets/images/house.svg" type="image/x-icon" />
-    <link rel="stylesheet" href="./css/constants.css" />
-    <link rel="stylesheet" href="./css/header.css" />
-    <link rel="stylesheet" href="./css/filters.css" />
-    <link rel="stylesheet" href="./css/cards.css" />
-    <link rel="stylesheet" href="./css/scrollbar.css" />
-    <link rel="stylesheet" href="./css/keyframes.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/media-queries.css" />
+    <link rel="stylesheet" href="css/constants.css" />
+    <link rel="stylesheet" href="css/filters.css" />
+    <link rel="stylesheet" href="css/cards.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/keyframes.css" />
+    <link rel="stylesheet" href="css/scrollbar.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/media-queries.css" />
     <title>Find and book a great experience</title>
   </head>
   <body>
@@ -25,15 +25,31 @@
         <h2>Find and book a great experience.</h2>
       </div>
     </header>
+
     <main class="main">
       <section class="filters-bar">
-        <div class="filters-container">
-          <div class="countries-filter"></div>
-          <div class="property-filters"></div>
+        <div class="countries-filter">
+          <button class="filter-btn active">All Stays</button>
+          <button class="filter-btn">Norway</button>
+          <button class="filter-btn">Finland</button>
+          <button class="filter-btn">Sweden</button>
+          <button class="filter-btn">Switzerland</button>
+        </div>
+        <div class="property-filters">
+          <label class="form-switch">
+            <input type="checkbox" id="superhost-toggle" />
+            Superhost
+          </label>
+          <select id="property-type" class="rooms-dropdown">
+            <option value="">Bedrooms</option>
+            <option value="1-bedroom">1 bedroom</option>
+            <option value="2-bedroom">2 bedrooms</option>
+          </select>
         </div>
       </section>
       <section class="cards-container"></section>
     </main>
+
     <script type="module" src="js/main.js"></script>
   </body>
 </html>
