@@ -16,6 +16,7 @@
   }
 
   .filters-bar {
+    flex-direction: row;
     margin: 0 var(--filter-bar-tablet-padding);
     width: calc(100% - 2 * var(--filter-bar-tablet-padding));
   }
@@ -44,6 +45,7 @@
   }
 
   .filters-bar {
+    flex-direction: row;
     width: var(--cards-container-width);
   }
 

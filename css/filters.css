@@ -1,5 +1,10 @@
 .filters-bar {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
   min-height: var(--filter-bar-min-height);
   padding: 10px;
   top: -56px;
@@ -10,4 +15,110 @@
   backdrop-filter: blur(5px);
   border: 1px solid var(--card-border-color);
   border-radius: var(--main-border-radius);
+}
+
+.countries-filter {
+  display: flex;
+  gap: 12px;
+
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+.filter-btn {
+  padding: 8px 12px;
+  color: var(--main-font-color);
+  font-weight: var(--semi-bold-font-weight);
+  background-color: transparent;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.filter-btn:hover,
+.filter-btn:focus,
+.filter-btn.active {
+  background-color: var(--card-border-color);
+}
+
+.property-filters {
+  display: flex;
+  gap: 20px;
+  padding: 0 20px 0 0;
+}
+
+.rooms-dropdown {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  background-color: transparent;
+  border: 2px solid var(--card-border-color);
+  border-radius: 8px;
+  padding: 12px;
+
+  color: var(--main-font-color);
+  font-weight: var(--semi-bold-font-weight);
+  cursor: pointer;
+  width: 120px;
+
+  background-image: url(../assets/images/arrow-down.svg);
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  background-size: 16px;
+}
+
+.rooms-dropdown:focus,
+.rooms-dropdown:hover {
+  border-color: rgba(255, 255, 255, 0.6);
+  outline: none;
+}
+
+.form-switch {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-right: 20px;
+  cursor: pointer;
+
+  color: var(--main-font-color);
+  font-weight: var(--regular-font-weight);
+  font-size: 12px;
+}
+
+.form-switch input[type='checkbox'] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 40px;
+  height: 20px;
+  background-color: #4e4e6a;
+  border-radius: 20px;
+  position: relative;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-switch input[type='checkbox']::before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: transform 0.3s ease;
+}
+
+.form-switch input[type='checkbox']:checked {
+  background-color: #4e80ee;
+}
+
+.form-switch input[type='checkbox']:checked::before {
+  transform: translateX(20px);
 }

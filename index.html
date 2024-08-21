@@ -28,26 +28,23 @@
 
     <main class="main">
       <section class="filters-bar">
-        <div class="filters-container">
-          <div class="countries-filter">
-            <button class="filter-btn active">All Stays</button>
-            <button class="filter-btn">Norway</button>
-            <button class="filter-btn">Finland</button>
-            <button class="filter-btn">Sweden</button>
-            <button class="filter-btn">Switzerland</button>
-          </div>
-          <div class="property-filters">
-            <label class="form-switch">
-              <input type="checkbox" id="superhost-toggle" />
-              <span class="slider"></span>
-              Superhost
-            </label>
-            <select id="property-type" class="property-dropdown">
-              <option value="">Property type</option>
-              <option value="Cabin">Cabin</option>
-              <option value="House">House</option>
-            </select>
-          </div>
+        <div class="countries-filter">
+          <button class="filter-btn active">All Stays</button>
+          <button class="filter-btn">Norway</button>
+          <button class="filter-btn">Finland</button>
+          <button class="filter-btn">Sweden</button>
+          <button class="filter-btn">Switzerland</button>
+        </div>
+        <div class="property-filters">
+          <label class="form-switch">
+            <input type="checkbox" id="superhost-toggle" />
+            Superhost
+          </label>
+          <select id="property-type" class="rooms-dropdown">
+            <option value="">Bedrooms</option>
+            <option value="1-bedroom">1 bedroom</option>
+            <option value="2-bedroom">2 bedrooms</option>
+          </select>
         </div>
       </section>
       <section class="cards-container"></section>
