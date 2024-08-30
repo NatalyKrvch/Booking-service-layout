@@ -12,7 +12,7 @@
   align-items: center;
   text-align: center;
   font-size: 1.2em;
-  color: #666;
+  color: var(--card-font-color);
   grid-column: 1 / -1;
 }
 
