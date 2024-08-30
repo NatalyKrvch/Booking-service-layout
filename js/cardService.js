@@ -26,27 +26,43 @@ export function renderCards(cards) {
   });
 }
 
-export function filterCards(filters) {
+let activeFilters = {
+  country: null,
+  superhost: null,
+  propertyType: null,
+  bedrooms: null,
+};
+
+export function filterCards(newFilters) {
+  activeFilters = { ...activeFilters, ...newFilters };
+
   let filteredCards = allCards;
 
   // Country filter
-  if (filters.country && filters.country !== 'All Stays') {
+  if (activeFilters.country && activeFilters.country !== 'All Stays') {
     filteredCards = filteredCards.filter(
-      (card) => card.location === filters.country
+      (card) => card.location === activeFilters.country
     );
   }
 
   // Superhost filter
-  if (filters.superhost !== undefined) {
+  if (activeFilters.superhost !== null) {
     filteredCards = filteredCards.filter(
-      (card) => card.superhost === filters.superhost
+      (card) => card.superhost === activeFilters.superhost
     );
   }
 
   // Property type filter
-  if (filters.propertyType && filters.propertyType !== '') {
+  if (activeFilters.propertyType && activeFilters.propertyType !== '') {
     filteredCards = filteredCards.filter(
-      (card) => card.type === filters.propertyType
+      (card) => card.type === activeFilters.propertyType
+    );
+  }
+
+  // Bedrooms filter
+  if (activeFilters.bedrooms && activeFilters.bedrooms !== '') {
+    filteredCards = filteredCards.filter(
+      (card) => card.capacity.bedroom === parseInt(activeFilters.bedrooms, 10)
     );
   }
 

@@ -3,13 +3,13 @@
   grid-template-columns: 1fr;
   justify-items: center;
   gap: 72px;
-  margin: 50px 0;
+  margin-bottom: 50px;
 }
 
 .card {
   position: relative;
-  height: var(--card-height);
-  width: var(--card-width);
+  min-height: var(--card-height);
+  max-width: var(--card-width);
   color: var(--main-font-color);
 
   border: 1px solid var(--card-border-color);

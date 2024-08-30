@@ -16,13 +16,13 @@ document.addEventListener('DOMContentLoaded', () => {
     .getElementById('superhost-toggle')
     .addEventListener('change', (event) => {
       const isSuperhost = event.target.checked;
-      filterCards({ superhost: isSuperhost });
+      filterCards({ superhost: isSuperhost ? true : null });
     });
 
   document
-    .getElementById('property-type')
+    .getElementById('rooms-dropdown')
     .addEventListener('change', (event) => {
-      const propertyType = event.target.value;
-      filterCards({ propertyType });
+      const bedrooms = event.target.value;
+      filterCards({ bedrooms });
     });
 });
