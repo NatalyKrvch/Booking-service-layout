@@ -1,7 +1,7 @@
 # Booking Service Layout
 
 ## Project Overview
-**Property Listings** is a responsive web application that allows users to explore various properties in scenic locations such as Norway, Finland, Sweden, and Switzerland. The application offers an intuitive interface for filtering properties by location, superhost status, property type, and the number of bedrooms. This project is built with a focus on modern web development best practices, ensuring a seamless user experience across all devices.
+**Booking Service Layout** is a responsive web application that allows users to explore various properties in scenic locations such as Norway, Finland, Sweden, and Switzerland. The application offers an intuitive interface for filtering properties by location, superhost status, property type, and the number of bedrooms. This project is built with a focus on modern web development best practices, ensuring a seamless user experience across all devices.
 
 ## Features
 - **Responsive Design:** Built with a mobile-first approach, ensuring a smooth experience across all devices, including mobile phones, tablets, and desktops.
