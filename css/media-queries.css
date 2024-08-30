@@ -1,8 +1,19 @@
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 360px) {
   .property-filters {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+
+  .cards-container {
+    margin: 0 10px;
+  }
+}
+
+@media screen and (min-width: 528px) {
+  .countries-filter {
+    flex-direction: row;
+    gap: 0;
   }
 }
 
@@ -32,6 +43,7 @@
   .countries-filter {
     flex-direction: row;
     gap: 0;
+    padding: 10px 10px 10px 20px;
   }
 
   .property-filters {
@@ -75,6 +87,7 @@
   .property-filters {
     flex-direction: row;
     gap: 20px;
+    padding: 10px 20px;
   }
 
   .cards-container {
