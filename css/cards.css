@@ -6,6 +6,16 @@
   margin-bottom: 50px;
 }
 
+.placeholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.2em;
+  color: var(--card-font-color);
+  grid-column: 1 / -1;
+}
+
 .card {
   position: relative;
   min-height: var(--card-height);

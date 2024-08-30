@@ -2,6 +2,13 @@ import { renderCard } from './renderCard.js';
 
 let allCards = [];
 
+let activeFilters = {
+  country: null,
+  superhost: null,
+  propertyType: null,
+  bedrooms: null,
+};
+
 export async function loadCards() {
   try {
     const response = await fetch(
@@ -18,20 +25,22 @@ export async function loadCards() {
 
 export function renderCards(cards) {
   const cardsContainer = document.querySelector('.cards-container');
+  const isCardsContainerEmpty = cards.length === 0;
   cardsContainer.innerHTML = '';
 
-  cards.forEach((item) => {
-    const card = renderCard(item);
-    cardsContainer.appendChild(card);
-  });
+  if (isCardsContainerEmpty) {
+    const placeholder = document.createElement('div');
+    placeholder.classList.add('placeholder');
+    placeholder.textContent =
+      'There are no stays that match your search criteria';
+    cardsContainer.appendChild(placeholder);
+  } else {
+    cards.forEach((item) => {
+      const card = renderCard(item);
+      cardsContainer.appendChild(card);
+    });
+  }
 }
-
-let activeFilters = {
-  country: null,
-  superhost: null,
-  propertyType: null,
-  bedrooms: null,
-};
 
 export function filterCards(newFilters) {
   activeFilters = { ...activeFilters, ...newFilters };

@@ -1,10 +1,10 @@
 import { filterCards } from './cardService.js';
 
 document.addEventListener('DOMContentLoaded', () => {
-  document.querySelectorAll('.filter-btn').forEach((button) => {
+  document.querySelectorAll('.filter-button').forEach((button) => {
     button.addEventListener('click', () => {
       document
-        .querySelectorAll('.filter-btn')
+        .querySelectorAll('.filter-button')
         .forEach((btn) => btn.classList.remove('active'));
       button.classList.add('active');
       const country = button.textContent.trim();
