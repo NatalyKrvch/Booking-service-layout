@@ -19,6 +19,7 @@
 
 .countries-filter {
   display: flex;
+  flex-direction: column;
   gap: 12px;
 
   padding: 10px 20px;
@@ -46,6 +47,9 @@
 
 .property-filters {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 20px;
   padding: 0 20px 0 0;
 }
@@ -63,12 +67,17 @@
   color: var(--main-font-color);
   font-weight: var(--semi-bold-font-weight);
   cursor: pointer;
-  width: 120px;
+  width: 124px;
 
   background-image: url(../assets/images/arrow-down.svg);
   background-repeat: no-repeat;
   background-position: right 16px center;
   background-size: 16px;
+}
+
+.rooms-dropdown option {
+  background-color: var(--background-color);
+  color: var(--main-font-color);
 }
 
 .rooms-dropdown:focus,
