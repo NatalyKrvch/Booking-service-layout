@@ -26,7 +26,7 @@
   border-radius: 8px;
 }
 
-.filter-btn {
+.filter-button {
   padding: 8px 12px;
   color: var(--main-font-color);
   font-weight: var(--semi-bold-font-weight);
@@ -39,9 +39,9 @@
     color 0.3s ease;
 }
 
-.filter-btn:hover,
-.filter-btn:focus,
-.filter-btn.active {
+.filter-button:hover,
+.filter-button:focus,
+.filter-button.active {
   background-color: var(--card-border-color);
 }
 
@@ -80,7 +80,7 @@
 
 .rooms-dropdown:focus,
 .rooms-dropdown:hover {
-  border-color: rgba(255, 255, 255, 0.6);
+  border-color: var(--rooms-dropdown-color);
   outline: none;
 }
 
@@ -100,9 +100,10 @@
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+
   width: 40px;
   height: 20px;
-  background-color: #4e4e6a;
+  background-color: var(--switch-background-color);
   border-radius: 20px;
   position: relative;
   outline: none;
@@ -114,7 +115,7 @@
   content: '';
   width: 16px;
   height: 16px;
-  background-color: #fff;
+  background-color: var(--main-font-color);
   border-radius: 50%;
   position: absolute;
   top: 2px;
@@ -123,7 +124,7 @@
 }
 
 .form-switch input[type='checkbox']:checked {
-  background-color: #4e80ee;
+  background-color: var(--switch-background-color-hover);
 }
 
 .form-switch input[type='checkbox']:checked::before {
