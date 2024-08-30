@@ -38,29 +38,33 @@ export function filterCards(newFilters) {
 
   let filteredCards = allCards;
 
-  // Country filter
-  if (activeFilters.country && activeFilters.country !== 'All Stays') {
+  const hasCountryFilter =
+    activeFilters.country && activeFilters.country !== 'All Stays';
+  const hasSuperhostFilter = activeFilters.superhost !== null;
+  const hasPropertyTypeFilter =
+    activeFilters.propertyType && activeFilters.propertyType !== '';
+  const hasBedroomsFilter =
+    activeFilters.bedrooms && activeFilters.bedrooms !== '';
+
+  if (hasCountryFilter) {
     filteredCards = filteredCards.filter(
       (card) => card.location === activeFilters.country
     );
   }
 
-  // Superhost filter
-  if (activeFilters.superhost !== null) {
+  if (hasSuperhostFilter) {
     filteredCards = filteredCards.filter(
       (card) => card.superhost === activeFilters.superhost
     );
   }
 
-  // Property type filter
-  if (activeFilters.propertyType && activeFilters.propertyType !== '') {
+  if (hasPropertyTypeFilter) {
     filteredCards = filteredCards.filter(
       (card) => card.type === activeFilters.propertyType
     );
   }
 
-  // Bedrooms filter
-  if (activeFilters.bedrooms && activeFilters.bedrooms !== '') {
+  if (hasBedroomsFilter) {
     filteredCards = filteredCards.filter(
       (card) => card.capacity.bedroom === parseInt(activeFilters.bedrooms, 10)
     );
